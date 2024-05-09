@@ -1,0 +1,46 @@
+{
+    "ckan": {
+        "Bugfixes": [
+            {
+                "canada_only": true,
+                "backport": false,
+                "change_log": "Catch NotAuthorized and NotFound in Dataset Feed view, returning 403 and 404 respectfully instead of hitting 500 server error.\n",
+                "hash": "e9400a1a776bff3567fe75f04fac8c1ae5c2eca0"
+            }
+        ],
+        "Features": [
+            {
+                "canada_only": true,
+                "backport": false,
+                "change_log": "Disabled unused Group routes.\n",
+                "hash": "7ea634448e2a5ccd00f0af5d7db658ad549fa0b5"
+            }
+        ]
+    },
+    "ckanext-dcat": {
+        "Bugfixes": [
+            {
+                "canada_only": true,
+                "backport": false,
+                "change_log": "Catch NotAuthorized in view, returning 403 instead of hitting 500 server error.\n",
+                "hash": "7947ad5cf510735be08e1def00acb1649bccb58e"
+            }
+        ]
+    },
+    "ckanext-xloader": {
+        "Features": [
+            {
+                "canada_only": true,
+                "backport": false,
+                "change_log": "Leading and trailing white space now gets removed from cell values when loading into the DataStore.\n",
+                "hash": "b1fc8ed9cf3ba5d8872bb3c380cf6c26d49bd3d5"
+            },
+            {
+                "canada_only": false,
+                "backport": true,
+                "change_log": "Ignore empty rows when loading into the DataStore.\n",
+                "hash": "e77b2ac2fe34b81b9c5426e1312a3b858e6f60a6"
+            }
+        ]
+    }
+}
